@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 :root {
@@ -80,6 +81,10 @@ h2 {
 a {
   color: var(--primary);
   transition: color 0.3s ease;
+}
+
+a:hover {
+  color: darken(var(--primary), 10%);
 }
 
 footer {
