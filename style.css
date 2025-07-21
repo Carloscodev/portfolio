@@ -81,3 +81,9 @@ form button {
 form button:hover {
   background: #005fa3;
 }
+
+#typed {
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

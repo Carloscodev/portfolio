@@ -28,7 +28,18 @@
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
-  </style>
+  
+#typed::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: #0077cc;
+  font-weight: normal;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+</style>
 </head>
 <body>
   <div id="loader"><div class="spinner"></div></div>
@@ -89,10 +100,17 @@
     });
     
 var typed = new Typed("#typed", {
-  strings: ["Desenvolvedor Front-End", "Entusiasta Python", "Criador de interfaces web"],
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 1000,
+  strings: [
+    "👨‍💻 Desenvolvedor Front-End",
+    "🐍 Python & Interfaces Gráficas",
+    "🌐 Criador de Experiências Web",
+    "📱 Design Responsivo",
+    "🚀 Em constante evolução",
+    "💡 Resolvo problemas com código"
+  ],
+  typeSpeed: 45,
+  backSpeed: 30,
+  backDelay: 1500,
   loop: true
 });
 
