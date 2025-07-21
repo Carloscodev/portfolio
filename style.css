@@ -4,6 +4,7 @@ body {
   margin: 0;
   background: var(--bg, #fff);
   color: var(--text, #000);
+  transition: background 0.4s, color 0.4s;
 }
 
 nav {
@@ -27,6 +28,7 @@ header, section {
   padding: 2rem;
   max-width: 960px;
   margin: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .grid {
@@ -40,11 +42,12 @@ header, section {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 form {
@@ -57,6 +60,12 @@ form input, form textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
 }
 
 form button {
@@ -66,6 +75,7 @@ form button {
   padding: 0.6rem;
   cursor: pointer;
   border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
 form button:hover {
