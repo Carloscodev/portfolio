@@ -87,3 +87,38 @@ form button:hover {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+section {
+  padding: 40px 20px;
+}
+#certificados, #linha-do-tempo {
+  background: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+#linha-do-tempo ul {
+  list-style: none;
+  padding: 0;
+}
+#linha-do-tempo li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+#linha-do-tempo li::before {
+  content: "🕓";
+  position: absolute;
+  left: 0;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+}
+form input:focus, form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
